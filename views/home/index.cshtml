@@ -1,0 +1,16 @@
+@model WeatherApp.Models.WeatherData
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App by itsresulzade</title>
+</head>
+<body>
+    <h1>Weather in @Model.Name</h1>
+    <p>Temperature: @Model.Main.Temp °C</p>
+    <p>Humidity: @Model.Main.Humidity %</p>
+    <p>Condition: @Model.Weather[0].Description</p>
+</body>
+</html>
